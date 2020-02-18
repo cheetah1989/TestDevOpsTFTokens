@@ -8,9 +8,16 @@ h1 {
   font-family: "Sacramento",cursive;
 }
 
+hr {
+  border:dotted #D3D3D3;
+  border-bottom: none;
+  width: 4%;
+}
+
+
 .profilePic {
   border-radius: 300px;
-  margin-bottom: 100px;
+  margin: 30px 190px 10px 5px;
 
 }
 
@@ -25,32 +32,84 @@ h1 {
 }
 
 .cloud-bottom {
-  margin: auto auto auto -30rem;
+  margin-right: 100px;
 }
 
 .skill-row {
   width: 50%;
-  margin: auto;
+  margin: auto 50px;
   padding-left: 20%;
   text-align: center;
-  line-height: 0.5;
 
 }
 
-.skills-img {
+.skill-img {
   float: left;
   width: 30%;
-  padding: 30px;
-  border-radius: 10rem;
-
+  border-radius: 300px;
+  margin: auto 2px;
 }
 
 .skill-heading {
   text-align: center;
   padding-right: 15%;
-  margin:8% auto auto auto;
+  margin: 50px 100px auto 290px;
 }
 
 .contact-head {
-  margin: 15% auto auto auto;
+  margin: 3% auto auto auto;
+
+}
+
+.contact-text {
+  width: 40%;
+  text-align: center;
+  margin-left: 380px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-family: "Sacramento";
+  font-weight: bold;
+  color: #FFFCFD;
+  font-size: 14px;
+  text-shadow: 1px 1px 0 #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 10px 25px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #12A39E;
+  background: #0BB5B5;
+  background: linear-gradient(top,  #0BB5B5,  #468CCF);
+  background: -ms-linear-gradient(top,  #0BB5B5,  #468CCF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0BB5B5), to(#468CCF));
+  background: -moz-linear-gradient(top,  #0BB5B5,  #468CCF);
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #14396A;
+  background: #468CCF;
+  background: linear-gradient(top,  #468CCF,  #63B8EE);
+  background: -ms-linear-gradient(top,  #468CCF,  #63B8EE);
+  background: -webkit-gradient(linear, left top, left bottom, from(#468CCF), to(#63B8EE));
+  background: -moz-linear-gradient(top,  #468CCF,  #63B8EE);
+}
+
+.bottom-container {
+  margin:50px;
+  background-color: #0BB5B5;
+  padding: 20px 0 10px;
+}
+
+a{
+  color: #000808;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+a:hover {
+
+  color : #F7F7F7;
 }
