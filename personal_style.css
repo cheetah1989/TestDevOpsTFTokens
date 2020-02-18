@@ -1,0 +1,56 @@
+body {
+  background-color: #C7EFF2;
+  text-align: center;
+}
+
+h1 {
+  font-size:3.2rem;
+  font-family: "Sacramento",cursive;
+}
+
+.profilePic {
+  border-radius: 300px;
+  margin-bottom: 100px;
+
+}
+
+.personal {
+  font-style: italic;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: auto auto auto .625rem;
+}
+
+.cloud-top {
+  margin: auto auto auto 35rem;
+}
+
+.cloud-bottom {
+  margin: auto auto auto -30rem;
+}
+
+.skill-row {
+  width: 50%;
+  margin: auto;
+  padding-left: 20%;
+  text-align: center;
+  line-height: 0.5;
+
+}
+
+.skills-img {
+  float: left;
+  width: 30%;
+  padding: 30px;
+  border-radius: 10rem;
+
+}
+
+.skill-heading {
+  text-align: center;
+  padding-right: 15%;
+  margin:8% auto auto auto;
+}
+
+.contact-head {
+  margin: 15% auto auto auto;
+}
