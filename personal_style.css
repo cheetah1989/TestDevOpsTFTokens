@@ -32,12 +32,12 @@ hr {
 }
 
 .cloud-bottom {
-  margin-right: 100px;
+  margin-right: 6.25rem;
 }
 
 .skill-row {
   width: 50%;
-  margin: auto 50px;
+  margin: auto 3.125rem;
   padding-left: 20%;
   text-align: center;
 
@@ -53,7 +53,7 @@ hr {
 .skill-heading {
   text-align: center;
   padding-right: 15%;
-  margin: 50px 100px auto 290px;
+  margin: 3.125rem 6.25px auto 18.125rem;
 }
 
 .contact-head {
@@ -64,8 +64,8 @@ hr {
 .contact-text {
   width: 40%;
   text-align: center;
-  margin-left: 380px;
-  margin-bottom: 30px;
+  margin-left: 23.75rem;
+  margin-bottom: 1.875rem;
 }
 
 .btn {
@@ -100,13 +100,13 @@ hr {
 .bottom-container {
   margin:50px;
   background-color: #0BB5B5;
-  padding: 20px 0 10px;
+  padding: 1.25rem 0 0.625rem;
 }
 
 a{
   color: #000808;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 0.3125rem 0.125rem;
 }
 
 a:hover {
