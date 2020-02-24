@@ -94,33 +94,41 @@ margin-right: 15%;
 }
 
 .btn {
-  font-family: "Sacramento";
-  font-weight: bold;
-  color: #FFFCFD;
-  font-size: 14px;
-  text-shadow: 1px 1px 0 #7CACDE;
-  box-shadow: 1px 1px 1px #BEE2F9;
-  padding: 10px 25px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  border: 2px solid #12A39E;
-  background: #0BB5B5;
-  background: linear-gradient(top,  #0BB5B5,  #468CCF);
-  background: -ms-linear-gradient(top,  #0BB5B5,  #468CCF);
-  background: -webkit-gradient(linear, left top, left bottom, from(#0BB5B5), to(#468CCF));
-  background: -moz-linear-gradient(top,  #0BB5B5,  #468CCF);
-  text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px 13px;
+    border: 1px solid #3075ca;
+    border-radius: 8px;
+    background: #0799bd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0799bd), to(#3075ca));
+    background: -moz-linear-gradient(top, #0799bd, #3075ca);
+    background: linear-gradient(to bottom, #0799bd, #3075ca);
+    -webkit-box-shadow: #48afff 0px 0px 40px 0px;
+    -moz-box-shadow: #48afff 0px 0px 40px 0px;
+    box-shadow: #48afff 0px 0px 40px 0px;
+    text-shadow: #1e497f 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn:hover,
+.btn:focus {
+    border: 1px solid ##3c92fd;
+    background: #08b8e3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#08b8e3), to(#3a8cf2));
+    background: -moz-linear-gradient(top, #08b8e3, #3a8cf2);
+    background: linear-gradient(to bottom, #08b8e3, #3a8cf2);
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn:active {
+    background: #045c71;
+    background: -webkit-gradient(linear, left top, left bottom, from(#045c71), to(#3075ca));
+    background: -moz-linear-gradient(top, #045c71, #3075ca);
+    background: linear-gradient(to bottom, #045c71, #3075ca);
 }
 
-.btn:hover {
-  color: #14396A;
-  background: #468CCF;
-  background: linear-gradient(top,  #468CCF,  #63B8EE);
-  background: -ms-linear-gradient(top,  #468CCF,  #63B8EE);
-  background: -webkit-gradient(linear, left top, left bottom, from(#468CCF), to(#63B8EE));
-  background: -moz-linear-gradient(top,  #468CCF,  #63B8EE);
-}
 
 .bottom-container {
   margin:50px;
