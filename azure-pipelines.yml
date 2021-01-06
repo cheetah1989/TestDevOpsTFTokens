@@ -11,10 +11,6 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
  
 - task: AzureFileCopy@4
   inputs:
