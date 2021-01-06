@@ -17,4 +17,4 @@ steps:
     azureSubscription: 'Free Trial(35666c79-7f9c-4633-96b2-b16f9ca526fe)'
     Destination: 'AzureBlob'
     storage: 'tfstoragecheetah1989'
-    ContainerName: 'static-content'
+    ContainerName: '$web'
