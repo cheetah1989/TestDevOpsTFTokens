@@ -35,10 +35,12 @@ stages:
          vmImage: 'windows-latest'
        steps:
          - task: AzureFileCopy@2
-           displayName: "Copying file"
            inputs:
-              azureSubscription: 'AuthServiceConn'
-              SourcePath: "$(System.DefaultWorkingDirectory)/personalwebsite1"
-              Destination: 'AzureBlob'
-              ContainerName: '$web'
+             SourcePath: '''$(System.DefaultWorkingDirectory)/personalwebsite1'''
+             azureSubscription: 'AuthServiceConn'
+             Destination: 'AzureBlob'
+             storage: 'staticstorechetan'
+             ContainerName: '$web'
+
+         
             
