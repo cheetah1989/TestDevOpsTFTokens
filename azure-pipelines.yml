@@ -34,8 +34,6 @@ stages:
    displayName: "Running Copy"
    jobs:
      - job: Copying
-       variables:
-         - group: TerraformEnvVars
        steps:
          - task: AzureFileCopy@2
            displayName: "Copying file"
