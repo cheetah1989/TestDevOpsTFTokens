@@ -18,7 +18,10 @@ stages:
      variables:
      - group: TerraformEnvVars
      steps:
-     - powershell: |
+     - task: TerraformInstaller@0
+       inputs:
+         terraformVersion: 'latest'
+     - pwsh: | 
                 terraform init -input=false
                 terraform apply -input=false -auto-approve
        name: 'RunTerraForm'
