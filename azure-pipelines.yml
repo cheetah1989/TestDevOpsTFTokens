@@ -37,10 +37,8 @@ stages:
        steps:
          - task: AzureFileCopy@2
            displayName: "Copying file"
-           env:
-             ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
            inputs:
-              azureSubscription: $(ARM_SUBSCRIPTION_ID)
+              azureSubscription: '35666c79-7f9c-4633-96b2-b16f9ca526fe'
               SourcePath: "$(System.DefaultWorkingDirectory)/personalwebsite1"
               Destination: 'AzureBlob'
               ContainerName: '$web'
