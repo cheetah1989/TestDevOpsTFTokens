@@ -29,15 +29,16 @@ stages:
           ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
           ARM_TENANT_ID: $(ARM_TENANT_ID)
           ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
-  - stage: Initiate AZCopy
-    displayName: "Initiate Copy"
-    dependsOn: Build
+  
+  - stage:Initiate AZCopy
+    displayName:"Initiate Copy"
+    dependsOn:Build
     jobs:
-    - job: Intiating Copy
-      displayName: "Intiated Copy"
-    - task: AzureFileCopy@4
+    - job:Intiating Copy
+      displayName:"Intiated Copy"
+    - task:AzureFileCopy@4
       inputs:
-        azureSubscription: 'Free Trial(35666c79-7f9c-4633-96b2-b16f9ca526fe)'
+        azureSubscription: $(ARM_SUBSCRIPTION_ID)
         Destination: 'AzureBlob'
         storage: 'staticstorechetan'
         ContainerName: '$web'
