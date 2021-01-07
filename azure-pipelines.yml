@@ -30,15 +30,17 @@ stages:
           ARM_TENANT_ID: $(ARM_TENANT_ID)
           ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
   
-  - stage:Initiate AZCopy
+ - stage:Initiate AZCopy
     displayName:"Initiate Copy"
     dependsOn:Build
     jobs:
+    variables:
+    - group: TerraformEnvVars
     - job:Intiating Copy
       displayName:"Intiated Copy"
-    - task:AzureFileCopy@4
-      inputs:
-        azureSubscription: $(ARM_SUBSCRIPTION_ID)
-        Destination: 'AzureBlob'
-        storage: 'staticstorechetan'
-        ContainerName: '$web'
+       - task:AzureFileCopy@4
+         inputs:
+          azureSubscription: $(ARM_SUBSCRIPTION_ID)
+          Destination: 'AzureBlob'
+          storage: 'staticstorechetan'
+          ContainerName: '$web'
