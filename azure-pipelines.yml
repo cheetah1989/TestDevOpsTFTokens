@@ -18,9 +18,7 @@ stages:
      variables:
      - group: TerraformEnvVars
      steps:
-       - pwsh: | 
-            set -e
-            
+       - pwsh: |       
             terraform init -input=false
             terraform apply -input=false -auto-approve
          name: RunningTerraformScript
