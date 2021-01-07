@@ -7,14 +7,37 @@
 trigger:
 - main
 
-pool:
-  vmImage: 'windows-latest'
-
-steps:
- 
-- task: AzureFileCopy@4
-  inputs:
-    azureSubscription: 'Free Trial(35666c79-7f9c-4633-96b2-b16f9ca526fe)'
-    Destination: 'AzureBlob'
-    storage: 'tfstoragecheetah1989'
-    ContainerName: '$web'
+stages: 
+ - stage: Build
+   displayName: Create Blob Storage
+   jobs:
+   - job: Build
+     displayName: "Executing Terraform" 
+     pool:
+          vmImage: 'windows-latest'
+     variables:
+     - group: TerraformEnvVars
+     steps:
+       - script: | 
+            set -e
+            
+            terraform init -input=false
+            terraform apply -input=false -auto-approve
+         name: "Running Terraform Script"
+         env:
+          ARM_CLIENT_ID: $(ARM_CLIENT_ID)
+          ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
+          ARM_TENANT_ID: $(ARM_TENANT_ID)
+          ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
+  - stage: Initiate AZCopy
+    displayName: "Initiate Copy"
+    dependsOn: Build
+    jobs:
+    - job: Intiating Copy
+      displayName: "Intiated Copy"
+    - task: AzureFileCopy@4
+      inputs:
+        azureSubscription: 'Free Trial(35666c79-7f9c-4633-96b2-b16f9ca526fe)'
+        Destination: 'AzureBlob'
+        storage: 'staticstorechetan'
+        ContainerName: '$web'
