@@ -39,7 +39,7 @@ stages:
              SourcePath: '$(System.DefaultWorkingDirectory)/personalwebsite1'
              azureSubscription: 'AuthServiceConn'
              Destination: 'AzureBlob'
-             storage: 'staticstorechetan'
+             storage: 'tfstatechetan'
              ContainerName: '$web'
 
          
