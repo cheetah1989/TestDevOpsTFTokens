@@ -36,7 +36,7 @@ stages:
        steps:
          - task: AzureFileCopy@2
            inputs:
-             SourcePath: 'https://github.com/cheetah1989/personalwebsite1'
+             SourcePath: '$(Build.Repository.LocalPath)/personalwebsite1'
              azureSubscription: 'AuthServiceConn'
              Destination: 'AzureBlob'
              storage: 'tfstatechetan'
