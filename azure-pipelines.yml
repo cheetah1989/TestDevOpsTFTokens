@@ -36,7 +36,7 @@ stages:
        steps:
          - task: AzureFileCopy@2
            inputs:
-             SourcePath: 'C:\Users\Lenovo\OneDrive\Chetan\Chetan_TEMP\Terraform\personalwebsite1'
+             SourcePath: '$(System.DefaultWorkingDirectory)/personalwebsite1/code/*'
              azureSubscription: 'AuthServiceConn'
              Destination: 'AzureBlob'
              storage: 'tfstatechetan'
