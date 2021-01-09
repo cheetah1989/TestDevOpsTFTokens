@@ -12,7 +12,9 @@ stages:
    displayName: Create Blob Storage
    jobs:
    - job: Build
-     displayName: "Executing Terraform" 
+     displayName: "Executing Terraform"
+     pool:
+       vmImage: "windows-latest"
      variables:
      - group: TerraformEnvVars
      steps:
