@@ -1,0 +1,221 @@
+body {
+  background-color: #C7EFF2;
+  text-align: center;
+}
+
+h1 {
+  font-size:2.0rem;
+  font-family: "Comic Sans",cursive;
+}
+
+hr {
+  border:dotted #D3D3D3;
+  border-bottom: none;
+  width: 4%;
+}
+
+p{
+  font-family: "Helvetica Narrow", sans-serif;
+  line-height: 2;
+}
+
+
+.profilePic {
+  border-radius: 300px;
+  margin: 30px 190px 10px 5px;
+
+}
+
+.personal {
+  font-style: italic;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: auto auto auto .625rem;
+}
+
+.cloud-top {
+  margin: auto auto auto 35rem;
+}
+
+.cloud-bottom {
+  margin-right: 6.25rem;
+}
+
+.skill-row {
+  width: 50%;
+  margin: auto 3.125rem;
+  padding-left: 20%;
+  text-align: center;
+
+}
+
+.skill-img {
+  float: left;
+  width: 30%;
+  border-radius: 300px;
+  margin: auto 2px;
+}
+
+.skill-heading {
+  text-align: center;
+  text-align: center;
+  padding-right: 15%;
+  margin: 3.125rem 6.25px auto 12.125rem;
+}
+
+.hobbies-heading {
+  text-align: center;
+  padding-right: 15%;
+  margin: 3.125rem 6.25px auto 12.125rem;
+}
+
+.hobbies-img {
+border-radius: 600px;
+width: 15%;
+float:right;
+margin-right: 15%;
+}
+
+.hobbies {
+  text-align: center;
+  width: 35%;
+  margin: 5% auto auto auto;
+}
+
+
+.contact-head {
+  margin: 10% auto auto auto;
+
+}
+
+.contact-text {
+  width: 40%;
+  text-align: center;
+  margin:auto auto 30px auto;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px 13px;
+    border: 1px solid #3075ca;
+    border-radius: 8px;
+    background: #0799bd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0799bd), to(#3075ca));
+    background: -moz-linear-gradient(top, #0799bd, #3075ca);
+    background: linear-gradient(to bottom, #0799bd, #3075ca);
+    -webkit-box-shadow: #48afff 0px 0px 40px 0px;
+    -moz-box-shadow: #48afff 0px 0px 40px 0px;
+    box-shadow: #48afff 0px 0px 40px 0px;
+    text-shadow: #1e497f 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn:hover,
+.btn:focus {
+    border: 1px solid ##3c92fd;
+    background: #08b8e3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#08b8e3), to(#3a8cf2));
+    background: -moz-linear-gradient(top, #08b8e3, #3a8cf2);
+    background: linear-gradient(to bottom, #08b8e3, #3a8cf2);
+    color: #ffffff;
+    text-decoration: none;
+}
+.btn:active {
+    background: #045c71;
+    background: -webkit-gradient(linear, left top, left bottom, from(#045c71), to(#3075ca));
+    background: -moz-linear-gradient(top, #045c71, #3075ca);
+    background: linear-gradient(to bottom, #045c71, #3075ca);
+}
+
+
+.bottom-container {
+  margin:50px;
+  background-color: #0BB5B5;
+  padding: 1.25rem 0 0.625rem;
+}
+
+a{
+  color: #000808;
+  text-decoration: none;
+  margin: 0.3125rem 0.125rem;
+}
+
+a:hover {
+
+  color : #F7F7F7;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px 13px;
+    border: 1px solid #3075ca;
+    border-radius: 8px;
+    background: #4ebeff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4ebeff), to(#3075ca));
+    background: -moz-linear-gradient(top, #4ebeff, #3075ca);
+    background: linear-gradient(to bottom, #4ebeff, #3075ca);
+    -webkit-box-shadow: #48afff 0px 0px 40px 0px;
+    -moz-box-shadow: #48afff 0px 0px 40px 0px;
+    box-shadow: #48afff 0px 0px 40px 0px;
+    text-shadow: #1e497f 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid ##3c92fd;
+    background: #5ee4ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5ee4ff), to(#3a8cf2));
+    background: -moz-linear-gradient(top, #5ee4ff, #3a8cf2);
+    background: linear-gradient(to bottom, #5ee4ff, #3a8cf2);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #3075ca;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3075ca), to(#3075ca));
+    background: -moz-linear-gradient(top, #3075ca, #3075ca);
+    background: linear-gradient(to bottom, #3075ca, #3075ca);
+}
+
+
+.fbbutton {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 4px 13px;
+    border: 1px solid #3075ca;
+    border-radius: 8px;
+    background: #1288cc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1288cc), to(#3075ca));
+    background: -moz-linear-gradient(top, #1288cc, #3075ca);
+    background: linear-gradient(to bottom, #1288cc, #3075ca);
+    -webkit-box-shadow: #48afff 0px 0px 40px 0px;
+    -moz-box-shadow: #48afff 0px 0px 40px 0px;
+    box-shadow: #48afff 0px 0px 40px 0px;
+    text-shadow: #1e497f 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.fbbutton:hover,
+.fbbutton:focus {
+    border: 1px solid ##3c92fd;
+    background: #16a3f5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#16a3f5), to(#3a8cf2));
+    background: -moz-linear-gradient(top, #16a3f5, #3a8cf2);
+    background: linear-gradient(to bottom, #16a3f5, #3a8cf2);
+    color: #ffffff;
+    text-decoration: none;
+}
+.fbbutton:active {
+    background: #0b527a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0b527a), to(#3075ca));
+    background: -moz-linear-gradient(top, #0b527a, #3075ca);
+    background: linear-gradient(to bottom, #0b527a, #3075ca);
+}
