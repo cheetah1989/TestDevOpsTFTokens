@@ -37,7 +37,7 @@ stages:
          - task: AzureFileCopy@4
            inputs:
              SourcePath: '$(System.DefaultWorkingDirectory)/personalwebsite1/code/'
-             azureSubscription: 'AuthServiceConn'
+             azureSubscription: 'AzureConnectionPortal'
              Destination: 'AzureBlob'
              storage: 'tfstatechetan'
              ContainerName: '$web'
