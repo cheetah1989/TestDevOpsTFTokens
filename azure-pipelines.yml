@@ -13,8 +13,6 @@ stages:
    jobs:
    - job: Build
      displayName: "Executing Terraform"
-     pool:
-       vmImage: "windows-latest"
      variables:
      - group: TerraformEnvVars
      steps:
