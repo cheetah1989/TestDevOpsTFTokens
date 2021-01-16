@@ -34,13 +34,10 @@ stages:
        pool:
          vmImage: 'windows-latest'
        steps:
-         - task: AzureFileCopy@4
-           inputs:
-             SourcePath: '$(Build.Repository.LocalPath)/personalwebsite1/code/'
-             azureSubscription: 'AzureConnectionPortal'
-             Destination: 'AzureBlob'
-             storage: 'tfstatechetan'
-             ContainerName: '$web'
-
-         
-            
+        - task: AzureFileCopy@4
+          inputs:
+           SourcePath: 'cheetah1989/personalwebsite1'
+           azureSubscription: 'AzureConnectionPortal'
+           Destination: 'AzureBlob'
+           storage: 'tfstatechetan'
+           ContainerName: '$web'
