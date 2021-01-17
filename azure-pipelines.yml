@@ -26,26 +26,3 @@ stages:
          ARM_CLIENT_SECRET: $(ARM_CLIENT_SECRET)
          ARM_TENANT_ID: $(ARM_TENANT_ID)
          ARM_SUBSCRIPTION_ID: $(ARM_SUBSCRIPTION_ID)
- - stage:
-   dependsOn: Build
-   displayName: "Running Copy"
-   jobs:
-     - job: Copying
-       pool:
-         vmImage: 'windows-latest'
-       steps:
-         - task: AzureFileCopy@4
-           inputs:
-<<<<<<< HEAD
-             SourcePath: '$(Build.Repository.LocalPath)/personalwebsite1/code/'
-             azureSubscription: 'AuthServiceConn'
-=======
-             SourcePath: '$(System.DefaultWorkingDirectory)/personalwebsite1/code/'
-             azureSubscription: 'AzureConnectionPortal'
->>>>>>> f3c3115d7466589a8eee0bfe8a7e753c450b9fcc
-             Destination: 'AzureBlob'
-             storage: 'tfstatechetan'
-             ContainerName: '$web'
-
-         
-            
