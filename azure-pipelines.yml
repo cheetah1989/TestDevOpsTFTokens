@@ -1,0 +1,52 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+  - stage: Terraform Install
+    displayName: "Terraform Install"
+    jobs:
+      - job: 
+        displayName: "Terraform Install"        
+        steps:
+          - task: ReplaceVariables@2
+            inputs:
+               PathToFolder: 
+          - task: TerraformInstaller@0
+            displayName: "Intalling Terraform"
+            inputs:
+                 terraformVersion: '0.12.4'
+          - task: TerraformTaskV1@0
+            displayName: "Execute Terraform init"
+            inputs:
+                provider: 'azurerm'
+                command: 'init'
+                backendServiceArm: 'pk (35666c79-7f9c-4633-96b2-b16f9ca526fe)'
+                backendAzureRmResourceGroupName: 'canvas-poc'
+                backendAzureRmStorageAccountName: 'canvaspocmanual'
+                backendAzureRmContainerName: 'azure-webjobs-hosts'
+                backendAzureRmKey: 'terraform.tfstate'
+
+          - task: TerraformTaskV1@0
+            displayName: "Terraform Plan"
+            inputs:
+                provider: 'azurerm'
+                command: 'plan'
+                commandOptions: '--auto-approve'
+                environmentServiceNameAzureRM: 'pk (35666c79-7f9c-4633-96b2-b16f9ca526fe)'
+          
+          - task: TerraformTaskV1@0
+            displayName: "Terraform Plan"
+            inputs:
+                provider: 'azurerm'
+                command: 'apply'
+                commandOptions: '--auto-approve'
+                environmentServiceNameAzureRM: 'pk (35666c79-7f9c-4633-96b2-b16f9ca526fe)'
+
